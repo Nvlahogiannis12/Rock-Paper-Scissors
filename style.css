@@ -45,10 +45,18 @@ body {
     background-color: white;
     height: 450px;
     aspect-ratio: 4/3;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(184,134,11,0.95);
     border: 10px dotted;
     border-color:gold;
+}
+.classic{
+    margin-left: auto;
+    margin-top: 40px;
+}
+.special{
+    margin-left: auto;
+    margin-top: 35px;
 }
