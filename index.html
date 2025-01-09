@@ -22,40 +22,43 @@
     <body class="container-fluid">
         <header>
             <!-- Main title -->
-             <div class="row col-12 d-flex justify-content-center">
-            <div class="col-lg-8 title">
-                <h1 class="my-2">Rock, Paper, Scissors</h1>
-            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 title">
+                    <h1 class="my-2">Rock, Paper, Scissors</h1>
+                </div>
             </div>
         </header>
         <main>
             <!--Popup Game Selection-->
-            <div class="mode row justify-content-center">
+            <div class="mode row d-none justify-content-center">
                 <div class="col-12">
                     <h1>Select Game Mode</h1>
-                    <div class="row col-12 d-flex justify-content-center classic">
+                    <div class="row d-flex justify-content-center ">
                         <div class="col-6">
-                            <button type="button" class="btn btn-warning"><h2>Classic Mode</h2></button>
+                            <button type="button" class="btn btn-warning classic"><h2>Classic Mode</h2></button>
                         </div>
                     </div>
-                    <div class="row col-12 d-flex justify-content-center special">
+                    <div class="row d-flex justify-content-center ">
                         <div class="col-6">
-                            <button type="button" class="btn btn-warning"><h2>Special Mode</h2></button>
+                            <button type="button" class="btn btn-warning special"><h2>Special Mode</h2></button>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center ">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-warning BackButtton"><h2>Back</h2></button>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Buttons-->
-        <div class="row col-12 d-flex justify-content-center">
-            <div class="col-2">
-                <button type="button" class="btn btn-warning starting"><h2>Start</h2></button>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <button type="button" class="btn btn-warning starting" onclick="startMenu()"><h2>Start</h2></button>
             </div>
-        </div>
-        <div class="row col-12 d-flex justify-content-center">
-            <div class="col-2">
+            <div class="col-12">
                 <button type="button" class="btn btn-warning direction"><h2>Directions</h2></button>
             </div>
-        </div>
+            </div>
         </main>
         <footer>
             <!-- place footer here -->

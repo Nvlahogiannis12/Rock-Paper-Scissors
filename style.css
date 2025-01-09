@@ -55,8 +55,39 @@ body {
 .classic{
     margin-left: auto;
     margin-top: 40px;
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.classic:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
 }
 .special{
     margin-left: auto;
     margin-top: 35px;
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.special:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
+}
+.BackButtton{
+    margin-left: auto;
+    margin-top: 40px;
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.BackButtton:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
 }
