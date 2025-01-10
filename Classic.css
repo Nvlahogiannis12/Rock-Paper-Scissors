@@ -1,0 +1,19 @@
+body{
+    background-image:url(imgs/Casino-RPS.jpg) ;
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:gold;
+    text-shadow: 0px 0px 7px black;
+}
+.BackButton{
+    margin-top: 5px;
+}
+.iconDefault{
+    height: 80px;
+    width: 80px;
+    border: 1px;
+    border-radius:50%;
+    margin-top: 5px;
+}
