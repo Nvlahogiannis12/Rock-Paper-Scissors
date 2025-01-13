@@ -17,3 +17,13 @@ body{
     border-radius:50%;
     margin-top: 5px;
 }
+.gamebox{
+    background-color:darkgoldenrod;
+    text-align: center;
+    margin:auto;
+}
+.RPS-Buttons{
+    margin: auto;
+    text-align: center;
+    margin-top:5%;
+}

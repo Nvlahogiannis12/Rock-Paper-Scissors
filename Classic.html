@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-6 BackButton">
                     <a href="index.html">
-                        <button type="button" class="btn btn-warning" onclick="back()">
+                        <button type="button" class="btn btn-warning">
                         <h2>Back</h2>
                         </button>
                     </a>
@@ -36,7 +36,30 @@
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <!-- Center Box of Game-->
+            <div class="row">
+                <div class="gamebox col-8 justify-content-center">Words</div>
+            </div>
+            <!-- Buttons for RPS-->
+             <div class="row RPS-Buttons">
+                <div class="col-4">
+                    <button type="button" class="btn btn-warning" onclick="rock()"><h2>Rock</h2></button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-warning" onclick="paper()"><h2>Paper</h2></button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-warning" onclick="scissors()"><h2>Scissors</h2></button>
+                </div>
+             </div>
+
+
+             <h2 id="results"></h2>
+
+
+             
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
