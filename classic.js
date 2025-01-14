@@ -4,7 +4,6 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 //inputs username
 function getName() {
   let randomNumber = getRandomNumber(0, 9999);
@@ -12,7 +11,6 @@ function getName() {
   userName ? document.getElementById('name').innerText = `${userName}`:
   document.getElementById('name').innerText =`Guest_` + `${randomNumber}`
 }
-
 
 //opponent choice
 function opponentChoice(min, max) {
@@ -34,7 +32,6 @@ function computerResponse() {
    }
    console.log(computerChoice)
 }
-
 
 //If rock is chosen
 let playerChoice;
