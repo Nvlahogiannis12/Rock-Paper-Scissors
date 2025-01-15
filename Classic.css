@@ -18,7 +18,7 @@ body{
     margin-top: 5px;
 }
 .gamebox{
-    background-color:darkgoldenrod;
+    background-color:white;
     text-align: center;
     margin:auto;
 }
@@ -26,4 +26,24 @@ body{
     margin: auto;
     text-align: center;
     margin-top:5%;
+}
+.rock-photo{
+    height:250px;
+}
+
+.paper-photo{
+    height:250px;
+}
+
+.scissors-photo{
+    height:250px;
+}
+.player-box{
+    width:33%;
+}
+.VS-box{
+    width:33%;
+}
+.opponent-box{
+    width:33%;
 }
