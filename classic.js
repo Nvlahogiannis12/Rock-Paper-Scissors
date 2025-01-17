@@ -37,6 +37,7 @@ function computerResponse() {
 let playerChoice;
 function rock(){
   playerChoice = 'rock'
+  document.getElementById("player-box").src = "imgs/rock-RPS.png";
   computerResponse()
   determine()
 }
@@ -44,6 +45,7 @@ function rock(){
 //if paper is chosen
 function paper(){
   playerChoice = 'paper'
+  document.getElementById("player-box").src = "imgs/paper-rps.png";
   computerResponse()
   determine()
 }
@@ -51,6 +53,7 @@ function paper(){
 //if scissors is chosen
 function scissors(){
   playerChoice = 'scissors'
+  document.getElementById("player-box").src = "imgs/scissors-RPS.png";
   computerResponse()
   determine()
 }

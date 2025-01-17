@@ -28,15 +28,15 @@ body{
     margin-top:5%;
 }
 .rock-photo{
-    height:250px;
+    height:120px;
 }
 
 .paper-photo{
-    height:250px;
+    height:120px;
 }
 
 .scissors-photo{
-    height:250px;
+    height:120px;
 }
 .player-box{
     width:33%;
