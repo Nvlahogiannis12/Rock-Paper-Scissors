@@ -23,12 +23,15 @@ function computerResponse() {
   let computerNumber = opponentChoice(1, 3);
   if (computerNumber === 1){
     computerChoice = 'rock'
+    document.getElementById("opponent-box").src = "imgs/rock-RPS.png";
    }
    else if(computerNumber === 2){
      computerChoice = 'paper'
+     document.getElementById("opponent-box").src = "imgs/paper-rps.png";
    }
    else {
      computerChoice = 'scissors'
+     document.getElementById("opponent-box").src = "imgs/scissors-RPS.png";
    }
    console.log(computerChoice)
 }
