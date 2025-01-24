@@ -11,8 +11,8 @@ body{
     margin-top: 5px;
 }
 .iconDefault{
-    height: 80px;
-    width: 80px;
+    height: 80px !important;
+    width: 80px !important;
     border: 1px;
     border-radius:50%;
     margin-top: 5px;
@@ -27,16 +27,9 @@ body{
     text-align: center;
     margin-top:5%;
 }
-.rock-photo{
+img{
     height:120px;
-}
-
-.paper-photo{
-    height:120px;
-}
-
-.scissors-photo{
-    height:120px;
+    width:auto;
 }
 .player-box{
     width:33%;
@@ -46,4 +39,10 @@ body{
 }
 .opponent-box{
     width:33%;
+}
+.playerResult{
+color:black;
+}
+.opponentResult{
+    color:black
 }
