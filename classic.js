@@ -47,6 +47,7 @@ function rock(){
   computerResponse()
   determine()
     document.getElementById("playerResult").innerText = `Player Chose: ${playerChoice}`
+    scoreDisplay()
 }
 
 //if paper is chosen
@@ -56,6 +57,7 @@ function paper(){
   computerResponse()
   determine()
     document.getElementById("playerResult").innerText = `Player Chose: ${playerChoice}`
+    scoreDisplay()
 }
 
 //if scissors is chosen
@@ -65,31 +67,36 @@ function scissors(){
   computerResponse()
   determine()
     document.getElementById("playerResult").innerText = `Player Chose: ${playerChoice}`
+    scoreDisplay()
 }
 
 //determine winner
+let playerPoints = 0;
+let computerPoints = 0;
 function determine(){
   if(playerChoice === 'Rock' && computerChoice === 'Rock'){
-console.log('Tie')
   } else if (playerChoice === 'Rock' && computerChoice === 'Paper'){
-console.log('Lose')
+computerPoints++
   } else if (playerChoice === 'Rock' && computerChoice === 'Scissors'){
-console.log('Winner')
+playerPoints++ 
   } else if (playerChoice === 'Scissors' && computerChoice === 'Rock'){
-console.log('Lose')
+computerPoints++ 
   } else if (playerChoice === 'Scissors' && computerChoice === 'Paper'){
-console.log('winner')
+playerPoints++ 
   } else if (playerChoice === 'Scissors' && computerChoice === 'Scissors'){
-console.log('Tie')
   } else if (playerChoice === 'Paper' && computerChoice === 'Rock'){
-console.log('Winner')
+playerPoints++ 
   } else if (playerChoice === 'Paper' && computerChoice === 'Paper'){
-console.log('Tie')
   } else if (playerChoice === 'Paper' && computerChoice === 'Scissors'){
-console.log('Lose')
+computerPoints++ 
+
   } else {
     console.log('ERROR: HOW DID YOU MANAGE THIS?!')
   }
 }
 
-//word display of chosen object
+
+//Score Display
+function scoreDisplay(){
+document.getElementById("gameScore").innerText = `${playerPoints} - ${computerPoints}`
+}

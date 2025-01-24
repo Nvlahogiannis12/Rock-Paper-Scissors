@@ -28,17 +28,8 @@ body{
     margin-top:5%;
 }
 img{
-    height:120px;
-    width:auto;
-}
-.player-box{
-    width:33%;
-}
-.VS-box{
-    width:33%;
-}
-.opponent-box{
-    width:33%;
+    height:150px;
+    width: auto;
 }
 .playerResult{
 color:black;
