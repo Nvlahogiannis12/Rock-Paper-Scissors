@@ -90,7 +90,12 @@ playerPoints++
   } else if (playerChoice === 'Paper' && computerChoice === 'Scissors'){
 computerPoints++ 
 
-  } else {
+  } else if(playerPoints === 3){
+    console.log('Winner')
+  } else if (computerPoints === 3){
+    console.log('Loser')
+  }
+   else {
     console.log('ERROR: HOW DID YOU MANAGE THIS?!')
   }
 }
