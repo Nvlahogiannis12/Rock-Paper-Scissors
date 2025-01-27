@@ -44,9 +44,11 @@
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-6">
+              <a href="Mirror.html">
               <button type="button" class="btn btn-warning special">
-                <h2>Special Mode</h2>
+                <h2>Mirror Mode</h2>
               </button>
+            </a>
             </div>
           </div>
           <div class="row d-flex justify-content-center">
@@ -62,6 +64,31 @@
           </div>
         </div>
       </div>
+
+      <!--Directions Popup-->
+      <div class="instructions row d-none justify-content-center mx-auto">
+        <div class="col-12">
+          <h1>Directions</h1>
+          <div class="row d-flex justify-content-center">
+            <h5><strong>Classic Mode:</strong> The game everyone loves. Paper beats Rock, Rock beats Scissors, Scissors beats Paper.</h5>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <h5><strong>Mirror Mode:</strong> What the game was reversed. Rock beats Paper, Paper beats Scissors, Scissors beats Rock.</h5>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-6">
+              <button
+                type="button"
+                class="btn btn-warning BackButtton"
+                onclick="backDirect()"
+              >
+                <h2>Back</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--Buttons-->
       <div class="row d-flex justify-content-center">
         <div class="col-12">
@@ -74,7 +101,7 @@
           </button>
         </div>
         <div class="col-12">
-          <button type="button" class="btn btn-warning direction">
+          <button type="button" class="btn btn-warning direction" onclick="directionMenu()">
             <h2>Directions</h2>
           </button>
         </div>
