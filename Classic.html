@@ -37,12 +37,34 @@
       </div>
     </header>
     <main>
+      <!--Popup for the Game Over (Win and Lose)-->
+      <div class="gameOver row d-none justify-content-center mx-auto">
+        <div class="col-12">
+          <h1 id="gameOver"></h1>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 mt-3">
+                <button type="button" class="btn btn-warning classic" onclick="reset()">
+                  <h2>Reset</h2>
+                </button>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 mt-5">
+              <a href="index.html">
+              <button type="button" class="btn btn-warning special">
+                <h2>Home</h2>
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Center Box of Game-->
       <div class="row">
         <div class="gamebox col-8 justify-content-center">
           <!--Score Woods here-->
           <div class="row">
-            <h1 id="gameScore"></h1>
+            <h1 id="gameScore">0 - 0</h1>
           </div>
           <div class="row">
             <div class="col-4">
@@ -63,30 +85,6 @@
                 src="imgs/question-mark-RPS.png"
               />
               <h6 id="computerResult" class="opponentResult"></h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Popup for the Game Over (Win and Lose)-->
-      <div class="gameOver row d-none justify-content-center">
-        <div class="col-12">
-          <h1 id="gameOver"></h1>
-          <div class="row d-flex justify-content-center">
-            <div class="col-6">
-              <a href="Classic.html">
-                <button type="button" class="btn btn-warning classic">
-                  <h2>Reset</h2>
-                </button>
-                </a>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-6">
-              <a href="index.html">
-              <button type="button" class="btn btn-warning special">
-                <h2>Home</h2>
-              </button>
-            </a>
             </div>
           </div>
         </div>

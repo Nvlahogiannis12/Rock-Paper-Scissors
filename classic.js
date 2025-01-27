@@ -69,12 +69,21 @@ function scissors(){
     document.getElementById("playerResult").innerText = `Player Chose: ${playerChoice}`
     scoreDisplay()
 }
-//determine winner
+
 let playerPoints = 0;
 let computerPoints = 0;
 
+//reset Game
+function reset(){
+  playerPoints = 0;
+  computerPoints = 0;
+  let menu = document.getElementsByClassName('gameOver')[0]
+    menu.classList.add("d-none")
+    menu.classList.remove("d-flex")
+  scoreDisplay()
+}
+//determine winner
 let win;
-
 function checkForWin(){
   if (playerPoints === 5){
     let win = 'You Win'

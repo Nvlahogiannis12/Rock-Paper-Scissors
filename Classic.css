@@ -21,6 +21,9 @@ body{
     background-color:white;
     text-align: center;
     margin:auto;
+    border: 10px dotted;
+    border-color:gold;
+    border-radius:5%;
 }
 .RPS-Buttons{
     margin: auto;
@@ -29,7 +32,7 @@ body{
 }
 img{
     height:150px;
-    width: auto;
+    width:auto;
 }
 .playerResult{
 color:black;
@@ -41,12 +44,15 @@ color:black;
 position: absolute; /*popup, use absolute */ /*inline, use relative*/
     z-index: 10000;
     background-color: white;
-    height: 600px;
-    aspect-ratio: 4/3;
-    top: 40%;
-    left: 50%;
+    height: 85%;
+    aspect-ratio: 3/4;
+    
+    left:50%;
+    top:50%;
     transform: translate(-50%, -50%);
+    
     background-color: rgba(184,134,11,0.95);
     border: 10px dotted;
     border-color:gold;
+    text-align: center;
 }
