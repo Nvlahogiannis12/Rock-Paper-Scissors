@@ -69,37 +69,61 @@ function scissors(){
     document.getElementById("playerResult").innerText = `Player Chose: ${playerChoice}`
     scoreDisplay()
 }
-
 //determine winner
 let playerPoints = 0;
 let computerPoints = 0;
+
+let win;
+
+function checkForWin(){
+  if (playerPoints === 5){
+    let win = 'You Win'
+    document.getElementById("gameOver").innerText = `${win}`
+    let menu = document.getElementsByClassName('gameOver')[0]
+    menu.classList.remove("d-none")
+    menu.classList.add("d-flex")
+  }
+  else if (computerPoints === 5){
+    let win = 'You Lose'
+    document.getElementById("gameOver").innerText = `${win}`
+    let menu = document.getElementsByClassName('gameOver')[0]
+    menu.classList.remove("d-none")
+    menu.classList.add("d-flex")
+  }
+}
+
 function determine(){
   if(playerChoice === 'Rock' && computerChoice === 'Rock'){
+checkForWin()
   } else if (playerChoice === 'Rock' && computerChoice === 'Paper'){
 computerPoints++
+checkForWin()
   } else if (playerChoice === 'Rock' && computerChoice === 'Scissors'){
 playerPoints++ 
+checkForWin()
   } else if (playerChoice === 'Scissors' && computerChoice === 'Rock'){
 computerPoints++ 
+checkForWin()
   } else if (playerChoice === 'Scissors' && computerChoice === 'Paper'){
 playerPoints++ 
+checkForWin()
   } else if (playerChoice === 'Scissors' && computerChoice === 'Scissors'){
+    checkForWin()
   } else if (playerChoice === 'Paper' && computerChoice === 'Rock'){
 playerPoints++ 
+checkForWin()
   } else if (playerChoice === 'Paper' && computerChoice === 'Paper'){
+    checkForWin()
   } else if (playerChoice === 'Paper' && computerChoice === 'Scissors'){
 computerPoints++ 
-
-  } else if(playerPoints === 3){
-    console.log('Winner')
-  } else if (computerPoints === 3){
-    console.log('Loser')
+checkForWin()
   }
    else {
     console.log('ERROR: HOW DID YOU MANAGE THIS?!')
   }
 }
 
+//popup for win or lose
 
 //Score Display
 function scoreDisplay(){
