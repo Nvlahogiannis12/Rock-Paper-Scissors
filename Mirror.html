@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Classic RPS</title>
+    <title>Mirror RPS</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,21 +16,24 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Classic.css" />
+    <link rel="stylesheet" href="Mirror.css" />
   </head>
 
   <body class="container-fluid">
     <header>
       <!-- place navbar here -->
       <div class="row">
-        <div class="col-6 BackButton">
+        <div class="col-4 BackButton">
           <a href="index.html">
             <button type="button" class="btn btn-warning">
               <h2>Back</h2>
             </button>
           </a>
         </div>
-        <div class="col-6 d-flex justify-content-end">
+        <div class="col-4 modeName">
+          <h1>Mirror Mode</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
           <h4 id="name"></h4>
           <img src="imgs/default-username-icon-RPS.jpg" class="iconDefault" />
         </div>
@@ -93,19 +96,19 @@
       <div class="row RPS-Buttons">
         <div class="col-4">
           <img class="option-photo img-fluid" src="imgs/rock-RPS.png" />
-          <button type="button" class="btn btn-warning" onclick="rock()">
+          <button type="button" class="rock-button btn btn-warning" onclick="rock()">
             <h2>Rock</h2>
           </button>
         </div>
         <div class="col-4">
           <img class="option-photo img-fluid" src="imgs/paper-rps.png" />
-          <button type="button" class="btn btn-warning" onclick="paper()">
+          <button type="button" class="paper-button btn btn-warning" onclick="paper()">
             <h2>Paper</h2>
           </button>
         </div>
         <div class="col-4">
           <img class="option-photo img-fluid" src="imgs/scissors-RPS.png" />
-          <button type="button" class="btn btn-warning" onclick="scissors()">
+          <button type="button" class="scissors-button btn btn-warning" onclick="scissors()">
             <h2>Scissors</h2>
           </button>
         </div>

@@ -54,7 +54,7 @@ body {
 }
 .classic{
     margin-left: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     border:5px;
     border-style:outset;
     border-color:darkgoldenrod;
@@ -67,7 +67,7 @@ body {
 }
 .special{
     margin-left: auto;
-    margin-top: 35px;
+    margin-top: 20px;
     border:5px;
     border-style:outset;
     border-color:darkgoldenrod;
@@ -80,7 +80,7 @@ body {
 }
 .BackButtton{
     margin-left: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     border:5px;
     border-style:outset;
     border-color:darkgoldenrod;

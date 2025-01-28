@@ -30,6 +30,39 @@ body{
     text-align: center;
     margin-top:5%;
 }
+.rock-button{
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.rock-button:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
+}
+.paper-button{
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.paper-button:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
+}
+.scissors-button{
+    border:5px;
+    border-style:outset;
+    border-color:darkgoldenrod;
+}
+.scissors-button:hover{
+    border:5px;
+    border-style:outset;
+    border-color:whitesmoke;
+    background-color:darkgoldenrod;
+}
 .option-photo{
     height:150px !important;
     width:auto;
@@ -64,4 +97,7 @@ position: absolute; /*popup, use absolute */ /*inline, use relative*/
 }
 .opponent-box{
     max-height:150px;
+}
+.modeName{
+    text-align: center;
 }
