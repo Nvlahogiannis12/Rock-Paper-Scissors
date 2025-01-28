@@ -100,4 +100,5 @@ position: absolute; /*popup, use absolute */ /*inline, use relative*/
 }
 .modeName{
     text-align: center;
+    margin-top: 2%;
 }
